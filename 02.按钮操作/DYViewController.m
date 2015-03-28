@@ -65,7 +65,7 @@ kMoveDirTop=10,
         case kMoveDirRight:
             x =kMvoeDelate;
             break;
-        default:
+        default	:
             break;
     }
     self.iconBtn.transform=CGAffineTransformTranslate(self.iconBtn.transform, x,y);
@@ -75,15 +75,24 @@ kMoveDirTop=10,
 
 -(IBAction)zoom :(UIButton *)button{
     CGRect frame=self.iconBtn.bounds;
-
-    if (button.tag) {
-        frame.size.height+=50;
-        frame.size.width+=50;
-    }else{
-        frame.size.height-=50;
-        frame.size.width-=50;
-    }
-       self.iconBtn.bounds=frame;
+//
+//    if (button.tag) {
+//        frame.size.height+=50;
+//        frame.size.width+=50;
+//    }else{
+//        frame.size.height-=50;
+//        frame.size.width-=50;
+//    }
+//       self.iconBtn.bounds=frame;
+    CGFloat z=button.tag?1.2:0.8;
+    self.iconBtn.transform=CGAffineTransformScale(self.iconBtn.transform, z,z);
 }
+-(IBAction)ration:(UIButton *)button{
+    CGFloat angle=button.tag?-M_PI_4:M_PI_4;
+    [UIView beginAnimations:nil context:nil];
+    self.iconBtn.transform = CGAffineTransformRotate(self.iconBtn.transform, angle);
+    [UIView commitAnimations];
+}
+
 
 @end

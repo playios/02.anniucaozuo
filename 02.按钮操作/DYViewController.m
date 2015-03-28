@@ -35,23 +35,41 @@ kMoveDirTop=10,
 }
 
 -(IBAction)move:(UIButton *)button{
-    CGRect frame=self.iconBtn.frame;
+//    CGRect frame=self.iconBtn.frame;
+//    switch (button.tag) {
+//        case kMoveDirTop:
+//            frame.origin.y-=kMvoeDelate;
+//            break;
+//        case kMoveDirLeft:
+//            frame.origin.x-=kMvoeDelate;
+//            break;
+//        case kMoveDirRight:
+//            frame.origin.x+=kMvoeDelate;
+//            break;
+//        case kMoveDirBottom:
+//            frame.origin.y+=kMvoeDelate;
+//            break;
+//            
+//    }
+    CGFloat x,y;
     switch (button.tag) {
-        case kMoveDirTop:
-            frame.origin.y-=kMvoeDelate;
+        case kMoveDirBottom:
+            y =kMvoeDelate;
+                break;
+            case kMoveDirTop:
+            y =-kMvoeDelate;
             break;
         case kMoveDirLeft:
-            frame.origin.x-=kMvoeDelate;
+            x =-kMvoeDelate;
             break;
         case kMoveDirRight:
-            frame.origin.x+=kMvoeDelate;
+            x =kMvoeDelate;
             break;
-        case kMoveDirBottom:
-            frame.origin.y+=kMvoeDelate;
+        default:
             break;
-            
     }
-    self.iconBtn.frame=frame;
+    self.iconBtn.transform=CGAffineTransformTranslate(self.iconBtn.transform, x,y);
+
 }
 
 

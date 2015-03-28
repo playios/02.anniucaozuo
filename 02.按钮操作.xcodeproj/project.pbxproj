@@ -46,7 +46,7 @@
 		892E3DAE1AC679D40077A364 /* DYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYAppDelegate.m; sourceTree = "<group>"; };
 		892E3DB11AC679D40077A364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		892E3DB31AC679D40077A364 /* DYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYViewController.h; sourceTree = "<group>"; };
-		892E3DB41AC679D40077A364 /* DYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYViewController.m; sourceTree = "<group>"; };
+		892E3DB41AC679D40077A364 /* DYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		892E3DB61AC679D40077A364 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		892E3DBC1AC679D40077A364 /* 02.按钮操作Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "02.按钮操作Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		892E3DBD1AC679D40077A364 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };

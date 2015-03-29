@@ -74,7 +74,7 @@ kMoveDirTop=10,
 
 
 -(IBAction)zoom :(UIButton *)button{
-    CGRect frame=self.iconBtn.bounds;
+  //  CGRect frame=self.iconBtn.bounds;
 //
 //    if (button.tag) {
 //        frame.size.height+=50;
